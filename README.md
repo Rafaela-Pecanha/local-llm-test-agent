@@ -38,11 +38,11 @@ pip install langchain-ollama langchain-core requests
 ## Execução e Fluxo de Trabalho
 O script principal (agente_petstore.py) inicia um CLI onde o cenário de teste é inserido.
 
-### Entrada: Descrição do cenário (ex: "Crie um pet chamado Rex...").
+* **Entrada:** Descrição do cenário (ex: "Crie um pet chamado Rex...").
 
-### Processamento: O agente analisa a intenção e mapeia para o endpoint correto (POST /pet).
+* **Processamento:** O agente analisa a intenção e mapeia para o endpoint correto (POST /pet).
 
-### Saída: O script Python é gerado e salvo na pasta /script_gerado.
+* **Saída:** O script Python é gerado e salvo na pasta /script_gerado.
 
 Abaixo, o log de execução demonstrando o processamento do requisito "Crie um pet com name Rex e status Ativo" e a geração imediata do código:
 ![Execução demonstrando o processamento do requisito "Crie um pet com name Rex e status Ativo"](script_gerado/terminal.png)
