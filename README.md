@@ -45,29 +45,21 @@ O script principal (agente_petstore.py) inicia um CLI onde o cenário de teste �
 * **Saída:** O script Python é gerado e salvo na pasta /script_gerado.
 
 Abaixo, o log de execução demonstrando o processamento do requisito "Crie um pet com name Rex e status Ativo" e a geração imediata do código:
+
 ![Execução demonstrando o processamento do requisito "Crie um pet com name Rex e status Ativo"](script_gerado/terminal.png)
 
 ## Validação e Prova de Conceito
 
 Para garantir a confiabilidade do código gerado pela IA, foi realizado um teste de integração ponta a ponta:
 
-### Execução do Script Gerado: O arquivo criado pela IA foi executado, realizando um POST na API da Petstore.
+* **Execução do Script Gerado:** O arquivo criado pela IA foi executado, realizando um POST na API da Petstore.
 
-### Validação no Swagger: Foi realizada uma consulta manual (GET /pet/123) para confirmar a persistência dos dados, como consta na imagem abaixo.
+* **Validação no Swagger:** Foi realizada uma consulta manual (GET /pet/123) para confirmar a persistência dos dados, como consta na imagem abaixo.
+
 ![Verificação do cadastro realizado pelo script teste](script_gerado/consulta_swagger.png)
 
 
-### Resultado: O servidor retornou Status 200 OK e o corpo da resposta confirmou o ID 123 e o nome Rex, validando a eficácia do agente.
-
-📂 Estrutura do Projeto
-Plaintext
-.
-├── agente_petstore.py        # Script principal do Agente (LangChain Pipeline)
-├── script_gerado/            # Diretório de saída dos scripts de teste
-│   └── teste_rex.py          # Script gerado automaticamente pela IA
-│   └── consulta_swagger.png  # Imagem para verificação do sucesso do script teste
-│   └── terminal.png          # Imagem do terminal após execução
-└── README.md                 # Documentação do projeto
+* **Resultado:** O servidor retornou Status 200 OK e o corpo da resposta confirmou o ID 123 e o nome Rex, validando a eficácia do agente.
 
 **⚠️ Aviso
 Este é um projeto de cunho educacional e demonstrativo, criado para consolidar conhecimentos em orquestração de LLMs e automação de testes. Não se trata de um produto final para produção.**
